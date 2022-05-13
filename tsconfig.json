@@ -1,26 +1,41 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "baseUrl": "src",
+    "jsx": "react",
     "lib": [
       "dom",
-      "dom.iterable",
-      "esnext"
+      "es2015",
+      "es2016",
+      "es2017",
+      "es2019",
+      "es2020",
+      "esNext"
     ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",
+    "strict": true,
+    "rootDir": "../",
+    "target": "es5",
+    "sourceMap": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "pretty": true,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "useUnknownInCatchVariables": false
   },
-  "include": [
-    "src"
+  "exclude": [
+    "node_modules/*",
+    "build",
+    "dist",
+    "webpack.*",
+    "coverage",
+    "fileTransformer.js",
+    "jest.init.js",
+    "storybook-static",
+    "tools"
   ]
 }
